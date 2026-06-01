@@ -4,12 +4,15 @@
   "description": "A collection of Three.js Shading Language (TSL) textures ",
   "main": "./src/tsl-textures.js",
   "module": "./src/tsl-textures.js",
+  "types": "./src/tsl-textures.d.ts",
   "exports": {
     "./tsl-textures.js": {
+      "types": "./src/tsl-textures.d.ts",
       "require": "./dist/cjs/tsl-textures.js",
       "import": "./dist/tsl-textures.js"
     },
     ".": {
+      "types": "./src/tsl-textures.d.ts",
       "require": "./dist/cjs/tsl-textures.js",
       "import": "./dist/tsl-textures.js"
     }
@@ -20,7 +23,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:types",
+    "test:types": "tsc --noEmit -p tsconfig.json"
   },
   "keywords": [
     "texture",
@@ -37,14 +41,20 @@
     "src"
   ],
   "license": "MIT",
+  "peerDependencies": {
+    "three": ">=0.183.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
+    "@types/three": "^0.184.1",
     "eslint": "^9.4.0",
     "eslint-plugin-html": "^8.1.1",
     "globals": "^15.15.0",
-    "rollup": "^4.37.0"
+    "rollup": "^4.37.0",
+    "three": "^0.184.0",
+    "typescript": "^5.9.3"
   }
 }
