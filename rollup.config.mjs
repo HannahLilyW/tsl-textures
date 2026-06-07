@@ -34,7 +34,7 @@ export default [
 	{
 		input: './src/tsl-textures.js',
 		output: {
-			file: `dist/cjs/tsl-textures.js`,
+			file: `dist/cjs/tsl-textures.cjs`,
 			format: 'cjs',
 			banner: `// TSL Textures v${pkg.version}\n`,
 			sourcemap: false
@@ -48,7 +48,7 @@ export default [
 	{
 		input: './src/tsl-textures.js',
 		output: {
-			file: `dist/cjs/tsl-textures.min.js`,
+			file: `dist/cjs/tsl-textures.min.cjs`,
 			format: 'cjs',
 			banner: `/*! TSL Textures v${pkg.version} */\n`,
 			sourcemap: false
