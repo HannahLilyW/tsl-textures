@@ -4649,7 +4649,9 @@ function halftone( params={} ) {
 
 halftone.defaults = defaults;
 
-window.__TSL_TEXTURES__ = 3.0;
+if (typeof window !== 'undefined') {
+    window.__TSL_TEXTURES__ = 3.0;
+}
 //export { aaa } from './aaa.js';
 
 export { approximateNormal, brain, bricks, camouflage, caustics, caveArt, circleDecor, circles, clouds, concrete, cork, crumpledFabric, dalmatianSpots, darthMaul, dysonSphere, entangled, fordite, gasGiant, grid, halftone, hideFallbackWarning, hsl, isolayers, isolines, karstRock, marble, neonLights, perlinNoise, photosphere, planet, polkaDots, processedWood, protozoa, remapExp, reticularVeins, romanPaving, rotatePivot, rotator, roughClay, runnyEggs, rust, satin, scaler, scepterHead, scream, selectPlanar, showFallbackWarning, spherical, stars, staticNoise, supersphere, tigerFur, toHsl, translator, turbulentSmoke, vnoise, voronoiCells, waterDrops, watermelon, waves, wood, zebraLines };
