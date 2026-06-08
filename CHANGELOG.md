@@ -1,5 +1,8 @@
 # TSL Textures
 
+## 3.0.4
+Fixed issue #26, merged PR #28
+
 ## 3.0.3
 Fixed Protozoa for WebGPU
 
