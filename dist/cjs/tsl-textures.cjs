@@ -4650,7 +4650,9 @@ function halftone( params={} ) {
 
 halftone.defaults = defaults;
 
-window.__TSL_TEXTURES__ = 3.0;
+if (typeof window !== 'undefined') {
+    window.__TSL_TEXTURES__ = 3.0;
+}
 //export { aaa } from './aaa.js';
 
 Object.defineProperty(exports, "fractal", {

@@ -2,15 +2,16 @@
   "name": "tsl-textures",
   "version": "3.0.1",
   "description": "A collection of Three.js Shading Language (TSL) textures ",
+  "type": "module",
   "main": "./src/tsl-textures.js",
   "module": "./src/tsl-textures.js",
   "exports": {
     "./tsl-textures.js": {
-      "require": "./dist/cjs/tsl-textures.js",
+      "require": "./dist/cjs/tsl-textures.cjs",
       "import": "./dist/tsl-textures.js"
     },
     ".": {
-      "require": "./dist/cjs/tsl-textures.js",
+      "require": "./dist/cjs/tsl-textures.cjs",
       "import": "./dist/tsl-textures.js"
     }
   },
