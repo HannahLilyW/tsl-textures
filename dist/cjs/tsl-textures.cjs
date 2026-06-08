@@ -1,4 +1,4 @@
-// TSL Textures v3.0.1
+// TSL Textures v3.0.4
 
 'use strict';
 
@@ -4650,8 +4650,10 @@ function halftone( params={} ) {
 
 halftone.defaults = defaults;
 
-if (typeof window !== 'undefined') {
-    window.__TSL_TEXTURES__ = 3.0;
+if ( typeof window !== 'undefined' ) {
+
+	window.__TSL_TEXTURES__ = 3.0;
+
 }
 //export { aaa } from './aaa.js';
 

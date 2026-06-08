@@ -1,5 +1,7 @@
-﻿if (typeof window !== 'undefined') {
-    window.__TSL_TEXTURES__ = 3.0;
+﻿if ( typeof window !== 'undefined' ) {
+
+	window.__TSL_TEXTURES__ = 3.0;
+
 }
 
 export * from './tsl-utils.js';
